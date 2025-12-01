@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Kalki Estate — Kalki Empire</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Kalki Estate — curated luxury properties from Kalki Empire." />
+  <style>
+    :root{
+      --bg1:#050509; --bg2:#0f0f14; --muted:#a9b3bd; --gold:#d4af37; --card:rgba(255,255,255,0.03);
+      --radius:12px; --max:1100px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:linear-gradient(180deg,var(--bg2),var(--bg1));color:#fff;padding:28px 18px}
+    .wrap{max-width:var(--max);margin:0 auto}
+    .top{display:flex;align-items:center;gap:18px;justify-content:center;flex-direction:column}
+    .logo{width:160px;border-radius:10px;padding:8px;background:linear-gradient(180deg,rgba(0,0,0,0.15),rgba(0,0,0,0.35));box-shadow:0 18px 40px rgba(0,0,0,0.6)}
+    h1{margin:14px 0 6px;font-size:32px;color:var(--gold);letter-spacing:2px}
+    p.lead{color:var(--muted);max-width:900px;text-align:center;margin:0 auto 18px}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:24px}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+    .property{display:flex;gap:14px;align-items:flex-start}
+    .thumb{width:160px;height:110px;border-radius:10px;background:#0b0b0d;flex-shrink:0;box-shadow:inset 0 -8px 18px rgba(0,0,0,0.5)}
+    .prop-title{font-weight:700;color:#fff}
+    .muted{color:var(--muted);font-size:14px}
+    .cta{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}
+    a.btn{padding:10px 14px;border-radius:10px;text-decoration:none;color:#071018;background:linear-gradient(90deg,#f3d06b,#d4af37);font-weight:700}
+    aside{min-width:280px}
+    .meta{color:var(--muted);font-size:14px}
+    footer{margin-top:30px;color:var(--muted);text-align:center}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}.thumb{width:120px;height:90px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <a href="/"><img class="logo" src="/logo-main.png" alt="Kalki Empire logo"></a>
+      <h1>KALKI ESTATE</h1>
+      <p class="lead">Curated properties and estate services. Private listings, discreet bookings, and white-glove management — presented by Kalki.</p>
+    </div>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h2 style="margin:0 0 8px">Featured Properties</h2>
+
+          <div style="display:flex;flex-direction:column;gap:12px;margin-top:12px">
+            <div class="property">
+              <div class="thumb" aria-hidden="true"></div>
+              <div>
+                <div class="prop-title">The Banyan Residence</div>
+                <div class="muted">4BR coastal villa • private pool • curated stays</div>
+                <div style="margin-top:8px" class="muted">Shortlist bookings & bespoke experiences available.</div>
+                <div class="cta"><a class="btn" href="mailto:estate@kalkiempire.com">Enquire — estate@kalkiempire.com</a></div>
+              </div>
+            </div>
+
+            <div class="property">
+              <div class="thumb" aria-hidden="true"></div>
+              <div>
+                <div class="prop-title">Gardenhouse Retreat</div>
+                <div class="muted">3BR country property • event-ready • boutique management</div>
+                <div style="margin-top:8px" class="muted">Available for short residencies and curated retreats.</div>
+                <div class="cta"><a class="btn" href="mailto:estate@kalkiempire.com">Request brochure</a></div>
+              </div>
+            </div>
+          </div>
+
+          <section style="margin-top:18px;color:var(--muted)">
+            <h3 style="margin:0 0 8px">Estate Services</h3>
+            <ul>
+              <li>Property sourcing & acquisition</li>
+              <li>Short-stay management & hospitality</li>
+              <li>Event & retreat planning</li>
+            </ul>
+            <p class="muted">For availability and pricing, email <a href="mailto:estate@kalkiempire.com">estate@kalkiempire.com</a>.</p>
+          </section>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h4 style="margin:0 0 8px">Contact Hub</h4>
+          <div class="meta">Estate inquiries: <br><strong><a style="color:var(--gold);text-decoration:none" href="mailto:estate@kalkiempire.com">estate@kalkiempire.com</a></strong></div>
+          <div style="height:14px"></div>
+          <div class="meta">Operations & bookings: <br><strong><a style="color:var(--gold);text-decoration:none" href="mailto:operations@kalkiempire.com">operations@kalkiempire.com</a></strong></div>
+          <div style="height:14px"></div>
+          <div class="meta">VIP & partnerships: <br><strong><a style="color:var(--gold);text-decoration:none" href="mailto:ceo@kalkiempire.com">ceo@kalkiempire.com</a></strong></div>
+        </div>
+
+        <div style="height:18px"></div>
+
+        <div class="card">
+          <h4 style="margin:0 0 8px">How bookings work</h4>
+          <ol style="color:var(--muted);padding-left:18px">
+            <li>Enquire → receive availability within 24 hours</li>
+            <li>Confirm dates → deposit requested (30%)</li>
+            <li>Final confirmation on cleared payment</li>
+          </ol>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="yr"></span> Kalki Empire — All rights reserved
+    </footer>
+  </div>
+
+<script>document.getElementById('yr').innerText=new Date().getFullYear()</script>
+</body>
+</html>
